@@ -1,3 +1,3 @@
-# candy-3d-game
+# candy-collector-3D
 
 Tu kiedyś będzie gra
