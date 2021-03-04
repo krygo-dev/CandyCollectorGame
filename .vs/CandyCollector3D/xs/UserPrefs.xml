@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{186A4FEE-94C7-F771-2AC5-5962040FD619}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Terrain2Obj.cs">
+    <Files>
+      <File FileName="Assets/Terrain2Obj.cs" Line="204" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CandyCollector3D" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a33611d7-46d3-40d4-8d60-209d074d46b1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
