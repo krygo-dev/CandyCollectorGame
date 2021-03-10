@@ -16,8 +16,8 @@ public class SpawnObjects : MonoBehaviour
 
         for (int i = 0; i < objectsNumber; i++)
         {
-            randomPositionX = Random.Range(-450.0f, 450.0f);
-            randomPositionZ = Random.Range(-450.0f, 450.0f);
+            randomPositionX = Random.Range(-440.0f, 440.0f);
+            randomPositionZ = Random.Range(-440.0f, 440.0f);
             randomPositionY = 100.0f;
 
             randomPosition = new Vector3(randomPositionX, randomPositionY, randomPositionZ);

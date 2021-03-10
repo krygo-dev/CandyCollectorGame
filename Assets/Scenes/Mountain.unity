@@ -1028,7 +1028,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994cfcf715636aa469c5829daa879af6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 7690843435147088073, guid: 128d8313d68b3474f9f8e4eb169bcd1e,
+  tree: {fileID: 7690843435147088073, guid: 128d8313d68b3474f9f8e4eb169bcd1e, type: 3}
+  smallerTree: {fileID: 937227681528791990, guid: d50135c28b766554abf7e0fd491d797b,
     type: 3}
   parent: {fileID: 960048567}
 --- !u!114 &1913628441
