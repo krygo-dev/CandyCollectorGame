@@ -34,6 +34,7 @@ public class SpawnObjects : MonoBehaviour
                     //Instantiate(gameObject, randomPosition, Quaternion.identity);
 
                     // Random Y rotation, looks more realistic
+                    //gameObject.AddComponent<MeshCollider>(); //collision
                     Instantiate(gameObject, randomPosition, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
                 }
             }
