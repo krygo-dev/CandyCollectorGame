@@ -72,6 +72,8 @@
     <Compile Include="Assets\First person controller\FirstPersonMovement.cs" />
     <Compile Include="Assets\Scripts\FlightController.cs" />
     <Compile Include="Assets\Scripts\StationMotion.cs" />
+    <Compile Include="Assets\Scripts\_WorldBuilder\SpawnBorderTrees.cs" />
+    <Compile Include="Assets\Scripts\_WorldBuilder\SpawnObjects.cs" />
     <Compile Include="Assets\Terrain2Obj.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Users/aleksanderbies/2019.4.20f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
