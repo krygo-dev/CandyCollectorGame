@@ -787,7 +787,7 @@ PrefabInstance:
     - target: {fileID: 114752365842419232, guid: 83528d106eccd4345940ac1ff56ffda7,
         type: 3}
       propertyPath: speed
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83528d106eccd4345940ac1ff56ffda7, type: 3}
@@ -1028,7 +1028,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994cfcf715636aa469c5829daa879af6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 7690843435147088073, guid: 128d8313d68b3474f9f8e4eb169bcd1e,
+  tree: {fileID: 7690843435147088073, guid: 128d8313d68b3474f9f8e4eb169bcd1e, type: 3}
+  smallerTree: {fileID: 937227681528791990, guid: d50135c28b766554abf7e0fd491d797b,
     type: 3}
   parent: {fileID: 960048567}
 --- !u!114 &1913628441
@@ -1055,11 +1056,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1913628438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e5d2584cc4afef4b83b223fbf99d4f2, type: 3}
+  m_Script: {fileID: 11500000, guid: 41dd578757106114395379909b811e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectsNumber: 1500
-  gameObject: {fileID: 1400461039152700, guid: c7821bc923171f24094e69062402d005, type: 3}
+  gameObject: {fileID: 1327385724211766, guid: dc00aab85b301f242896a77c4b442ec0, type: 3}
   parent: {fileID: 219938112}
 --- !u!114 &1913628443
 MonoBehaviour:
@@ -1085,11 +1086,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1913628438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e5d2584cc4afef4b83b223fbf99d4f2, type: 3}
+  m_Script: {fileID: 11500000, guid: 41dd578757106114395379909b811e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectsNumber: 1500
-  gameObject: {fileID: 1327385724211766, guid: dc00aab85b301f242896a77c4b442ec0, type: 3}
+  gameObject: {fileID: 1400461039152700, guid: c7821bc923171f24094e69062402d005, type: 3}
   parent: {fileID: 219938112}
 --- !u!114 &1913628445
 MonoBehaviour:

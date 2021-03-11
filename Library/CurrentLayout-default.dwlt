@@ -48,7 +48,11 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 61
+=======
+  controlID: 105
+>>>>>>> f5500a5bd4239f7611b2ff963028a66e9c6442d0
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +223,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 62
+=======
+  controlID: 106
+>>>>>>> f5500a5bd4239f7611b2ff963028a66e9c6442d0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +252,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 63
+=======
+  controlID: 107
+>>>>>>> f5500a5bd4239f7611b2ff963028a66e9c6442d0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,6 +350,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
@@ -345,13 +358,28 @@ MonoBehaviour:
   - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/aleksanderbies/CandyCollector3D
+=======
+    - Assets/First person controller
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/First person controller
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: D:\BACKUP\Studia\Unity\candy-collector-3D
+>>>>>>> f5500a5bd4239f7611b2ff963028a66e9c6442d0
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 70340000
     m_LastClickedID: 13424
     m_ExpandedIDs: 000000004a3400004c3400004e34000050340000523400005434000056340000583400005a3400005c3400005e34000000ca9a3b
+=======
+    m_SelectedIDs: 86400000
+    m_LastClickedID: 16518
+    m_ExpandedIDs: 000000006c4000006e40000070400000724000007440000076400000784000007a4000007c4000007e40000080400000824000008a40000000ca9a3b
+>>>>>>> f5500a5bd4239f7611b2ff963028a66e9c6442d0
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -379,7 +407,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 000000004a3400004c3400004e34000050340000523400005434000056340000583400005a3400005c3400005e340000
+=======
+    m_ExpandedIDs: 000000006c4000006e40000070400000724000007440000076400000784000007a4000007c4000007e4000008040000082400000
+>>>>>>> f5500a5bd4239f7611b2ff963028a66e9c6442d0
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -406,7 +438,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -423,7 +455,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -502,9 +534,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 8c370000
       m_LastClickedID: 0
       m_ExpandedIDs: 38f6ffffe0f9ffff68fbffff
+=======
+      m_SelectedIDs: 5e65eaff
+      m_LastClickedID: -1415842
+      m_ExpandedIDs: 3430ecff2e43fbff3443fbffb696fbffbc96fbff0234fcff0834fcff326cfcff386cfcff2eabfcff34abfcffecd1fcfff2d1fcff2835fdff2e35fdffb4bbfffff83e0000fc3e0000123f00002c3f0000323f00004a3f0000
+>>>>>>> f5500a5bd4239f7611b2ff963028a66e9c6442d0
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -564,9 +602,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 171.8087, y: 47.110725, z: 164.06064}
     speed: 2
     m_Value: {x: 171.8087, y: 47.110725, z: 164.06064}
+=======
+    m_Target: {x: -434.1639, y: 40.1035, z: -428.73834}
+    speed: 2
+    m_Value: {x: -434.1639, y: 40.1035, z: -428.73834}
+>>>>>>> f5500a5bd4239f7611b2ff963028a66e9c6442d0
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -612,6 +656,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
@@ -619,6 +664,15 @@ MonoBehaviour:
     m_Target: -4.589629
     speed: 2
     m_Value: -4.589629
+=======
+    m_Target: {x: -0.037486635, y: 0.93806654, z: -0.10740073, w: -0.32730198}
+    speed: 2
+    m_Value: {x: -0.037813593, y: 0.9383775, z: -0.10886263, w: -0.32583237}
+  m_Size:
+    m_Target: 16.070751
+    speed: 2
+    m_Value: 15.37871
+>>>>>>> f5500a5bd4239f7611b2ff963028a66e9c6442d0
   m_Ortho:
     m_Target: 0
     speed: 2

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnObjects : MonoBehaviour
+public class SpawnTrees : MonoBehaviour
 {
     public int objectsNumber = 3000;
     public GameObject gameObject;
@@ -24,7 +24,7 @@ public class SpawnObjects : MonoBehaviour
 
             if (Physics.Raycast(randomPosition, Vector3.down, out hit, 200.0f))
             {
-                randomPositionY = hit.point.y;
+                randomPositionY = hit.point.y - 0.6f;
 
                 if (randomPositionY >= -1 && randomPositionY <= 22)
                 {
@@ -36,6 +36,17 @@ public class SpawnObjects : MonoBehaviour
                     // Random Y rotation, looks more realistic
                     //gameObject.AddComponent<MeshCollider>(); //collision
                     Instantiate(gameObject, randomPosition, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
+
+                    /*
+                    var treeTmp = (GameObject) Instantiate(gameObject, randomPosition, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
+                    var collider = treeTmp.size; //jak wyciągnąć size?
+                    var orientation = collider.transform.rotation;
+                    if (Physics.CheckBox(randomPosition, collider / 2f, orientation))
+                    {
+                        Destroy(treeTmp);
+                    }
+                    */
+
                 }
             }
         }
