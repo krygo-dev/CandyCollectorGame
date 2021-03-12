@@ -68,12 +68,13 @@
     <Compile Include="Assets\First person controller\Components\GroundCheck.cs" />
     <Compile Include="Assets\First person controller\Components\Jump.cs" />
     <Compile Include="Assets\First person controller\Components\Zoom.cs" />
-    <Compile Include="Assets\First person controller\FirstPersonLook.cs" />
-    <Compile Include="Assets\First person controller\FirstPersonMovement.cs" />
+    <Compile Include="Assets\Scripts\FirstPersonLook.cs" />
+    <Compile Include="Assets\Scripts\FirstPersonMovement.cs" />
     <Compile Include="Assets\Scripts\FlightController.cs" />
     <Compile Include="Assets\Scripts\StationMotion.cs" />
     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnBorderTrees.cs" />
     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnObjects.cs" />
+    <Compile Include="Assets\Scripts\_WorldBuilder\SpawnTrees.cs" />
     <Compile Include="Assets\Terrain2Obj.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Users/aleksanderbies/2019.4.20f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
