@@ -34,7 +34,7 @@ public class SpawnObjects : MonoBehaviour
                 {
                     randomPositionY = hit.point.y;
 
-                    if (randomPositionY >= -1 && randomPositionY <= 22)
+                    if (randomPositionY >= -1 && randomPositionY <= 42)
                     {
                         randomPosition = new Vector3(randomPositionX, randomPositionY, randomPositionZ);
                         Instantiate(gameObject, randomPosition, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);

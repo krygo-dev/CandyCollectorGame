@@ -12,6 +12,7 @@ public class SpawnBorderTrees : MonoBehaviour
     {
         RaycastHit hit;
         float positionX, positionY, positionZ;
+        int maxSpawnY = 22;
         Vector3 position;
 
         // First row
@@ -26,7 +27,7 @@ public class SpawnBorderTrees : MonoBehaviour
             {
                 positionY = hit.point.y;
 
-                if (positionY < 22)
+                if (positionY < maxSpawnY)
                 {
                     position = new Vector3(positionX, positionY, positionZ);
                     Instantiate(tree, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
@@ -40,7 +41,7 @@ public class SpawnBorderTrees : MonoBehaviour
             {
                 positionY = hit.point.y;
 
-                if (positionY < 22)
+                if (positionY < maxSpawnY)
                 {
                     position = new Vector3(positionX, positionY, positionZ);
                     Instantiate(tree, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
@@ -55,7 +56,7 @@ public class SpawnBorderTrees : MonoBehaviour
             {
                 positionY = hit.point.y;
 
-                if (positionY < 22)
+                if (positionY < maxSpawnY)
                 {
                     position = new Vector3(positionX, positionY, positionZ);
                     Instantiate(tree, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
@@ -69,7 +70,7 @@ public class SpawnBorderTrees : MonoBehaviour
             {
                 positionY = hit.point.y;
 
-                if (positionY < 22)
+                if (positionY < maxSpawnY)
                 {
                     position = new Vector3(positionX, positionY, positionZ);
                     Instantiate(tree, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
@@ -89,7 +90,7 @@ public class SpawnBorderTrees : MonoBehaviour
             {
                 positionY = hit.point.y;
 
-                if (positionY < 22)
+                if (positionY < maxSpawnY)
                 {
                     position = new Vector3(positionX, positionY, positionZ);
                     Instantiate(tree, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
@@ -104,7 +105,7 @@ public class SpawnBorderTrees : MonoBehaviour
             {
                 positionY = hit.point.y;
 
-                if (positionY < 22)
+                if (positionY < maxSpawnY)
                 {
                     position = new Vector3(positionX, positionY, positionZ);
                     Instantiate(tree, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
@@ -119,7 +120,7 @@ public class SpawnBorderTrees : MonoBehaviour
             {
                 positionY = hit.point.y;
 
-                if (positionY < 22)
+                if (positionY < maxSpawnY)
                 {
                     position = new Vector3(positionX, positionY, positionZ);
                     Instantiate(tree, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
@@ -133,7 +134,7 @@ public class SpawnBorderTrees : MonoBehaviour
             {
                 positionY = hit.point.y;
 
-                if (positionY < 22)
+                if (positionY < maxSpawnY)
                 {
                     position = new Vector3(positionX, positionY, positionZ);
                     Instantiate(tree, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
@@ -153,7 +154,7 @@ public class SpawnBorderTrees : MonoBehaviour
             {
                 positionY = hit.point.y;
 
-                if (positionY < 22)
+                if (positionY < maxSpawnY)
                 {
                     position = new Vector3(positionX, positionY, positionZ);
                     Instantiate(tree, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
@@ -168,7 +169,7 @@ public class SpawnBorderTrees : MonoBehaviour
             {
                 positionY = hit.point.y;
 
-                if (positionY < 22)
+                if (positionY < maxSpawnY)
                 {
                     position = new Vector3(positionX, positionY, positionZ);
                     Instantiate(tree, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
@@ -183,7 +184,7 @@ public class SpawnBorderTrees : MonoBehaviour
             {
                 positionY = hit.point.y;
 
-                if (positionY < 22)
+                if (positionY < maxSpawnY)
                 {
                     position = new Vector3(positionX, positionY, positionZ);
                     Instantiate(tree, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
@@ -197,7 +198,7 @@ public class SpawnBorderTrees : MonoBehaviour
             {
                 positionY = hit.point.y;
 
-                if (positionY < 22)
+                if (positionY < maxSpawnY)
                 {
                     position = new Vector3(positionX, positionY, positionZ);
                     Instantiate(tree, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
@@ -215,9 +216,9 @@ public class SpawnBorderTrees : MonoBehaviour
 
             if (Physics.Raycast(position, Vector3.down, out hit, 200.0f))
             {
-                positionY = hit.point.y - 0.5f;
+                positionY = hit.point.y - 0.6f;
 
-                if (positionY < 20)
+                if (positionY < maxSpawnY - 2)
                 {
                     position = new Vector3(positionX, positionY, positionZ);
                     Instantiate(smallerTree, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
@@ -230,9 +231,9 @@ public class SpawnBorderTrees : MonoBehaviour
 
             if (Physics.Raycast(position, Vector3.down, out hit, 200.0f))
             {
-                positionY = hit.point.y - 0.5f;
+                positionY = hit.point.y - 0.6f;
 
-                if (positionY < 20)
+                if (positionY < maxSpawnY - 2)
                 {
                     position = new Vector3(positionX, positionY, positionZ);
                     Instantiate(smallerTree, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
@@ -246,9 +247,9 @@ public class SpawnBorderTrees : MonoBehaviour
 
             if (Physics.Raycast(position, Vector3.down, out hit, 200.0f))
             {
-                positionY = hit.point.y - 0.5f;
+                positionY = hit.point.y - 0.6f;
 
-                if (positionY < 20)
+                if (positionY < maxSpawnY - 2)
                 {
                     position = new Vector3(positionX, positionY, positionZ);
                     Instantiate(smallerTree, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
@@ -261,9 +262,9 @@ public class SpawnBorderTrees : MonoBehaviour
 
             if (Physics.Raycast(position, Vector3.down, out hit, 200.0f))
             {
-                positionY = hit.point.y - 0.5f;
+                positionY = hit.point.y - 0.6f;
 
-                if (positionY < 20)
+                if (positionY < maxSpawnY - 2)
                 {
                     position = new Vector3(positionX, positionY, positionZ);
                     Instantiate(smallerTree, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
