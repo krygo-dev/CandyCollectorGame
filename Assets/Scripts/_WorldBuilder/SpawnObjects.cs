@@ -12,35 +12,62 @@ public class SpawnObjects : MonoBehaviour
     {
         RaycastHit hit;
         float randomPositionX, randomPositionY, randomPositionZ;
-        Vector3 randomPosition;
+        int maxSpawnAttempts = 10;
+        float checkRadius = 3f;
+        Vector3 randomPosition = Vector3.zero;
 
         int i = 0;
 
         while (i < objectsNumber)
         {
-            randomPositionX = Random.Range(-440.0f, 440.0f);
-            randomPositionZ = Random.Range(-440.0f, 440.0f);
-            randomPositionY = 100.0f;
+            bool validPosition = false;
+            int spawnAttempts = 0;
 
-            if (randomPositionX > -386 && randomPositionX < -142 && randomPositionZ > -13 && randomPositionZ < 337)
+            while (!validPosition && spawnAttempts < maxSpawnAttempts)
             {
-                continue;
-            } 
-            else
-            {
-                randomPosition = new Vector3(randomPositionX, randomPositionY, randomPositionZ);
+                spawnAttempts++;
 
-                if (Physics.Raycast(randomPosition, Vector3.down, out hit, 200.0f))
+                randomPositionX = Random.Range(-440.0f, 440.0f);
+                randomPositionZ = Random.Range(-440.0f, 440.0f);
+                randomPositionY = 100.0f;
+
+                if (randomPositionX > -386 && randomPositionX < -142 && randomPositionZ > -13 && randomPositionZ < 337)
                 {
-                    randomPositionY = hit.point.y;
+                    validPosition = false;
+                }
+                else
+                {
+                    randomPosition = new Vector3(randomPositionX, randomPositionY, randomPositionZ);
 
-                    if (randomPositionY >= -1 && randomPositionY <= 42)
+                    if (Physics.Raycast(randomPosition, Vector3.down, out hit, 200.0f))
                     {
-                        randomPosition = new Vector3(randomPositionX, randomPositionY, randomPositionZ);
-                        Instantiate(gameObject, randomPosition, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
+                        randomPositionY = hit.point.y;
+
+                        if (randomPositionY >= -1 && randomPositionY <= 42)
+                        {
+                            randomPosition = new Vector3(randomPositionX, randomPositionY, randomPositionZ);
+                            validPosition = true;
+                            Collider[] colliders = Physics.OverlapSphere(randomPosition, checkRadius);
+
+                            foreach (Collider col in colliders)
+                            {
+                                if (col.tag == "Obstacle")
+                                {
+                                    validPosition = false;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            validPosition = false;
+                        }
                     }
                 }
+            }
 
+            if (validPosition)
+            {
+                Instantiate(gameObject, randomPosition, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
                 i++;
             }
         }

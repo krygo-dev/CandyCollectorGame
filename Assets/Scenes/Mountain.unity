@@ -1357,7 +1357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5d2584cc4afef4b83b223fbf99d4f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsNumber: 20000
+  objectsNumber: 30000
   gameObject: {fileID: 1943996455298776, guid: b2199aadf1bb8c4449f3edfc84a39f78, type: 3}
   parent: {fileID: 2129150327}
 --- !u!114 &1913628442
@@ -1372,7 +1372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41dd578757106114395379909b811e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsNumber: 1500
+  objectsNumber: 1800
   gameObject: {fileID: 1327385724211766, guid: dc00aab85b301f242896a77c4b442ec0, type: 3}
   parent: {fileID: 219938112}
 --- !u!114 &1913628443
@@ -1387,7 +1387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5d2584cc4afef4b83b223fbf99d4f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsNumber: 3500
+  objectsNumber: 10000
   gameObject: {fileID: 1562575627230960, guid: 01bdef6597b249b44a9530ab656246fc, type: 3}
   parent: {fileID: 1637841285}
 --- !u!114 &1913628444
@@ -1402,7 +1402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41dd578757106114395379909b811e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsNumber: 1500
+  objectsNumber: 1800
   gameObject: {fileID: 1400461039152700, guid: c7821bc923171f24094e69062402d005, type: 3}
   parent: {fileID: 219938112}
 --- !u!114 &1913628445
@@ -1417,7 +1417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5d2584cc4afef4b83b223fbf99d4f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsNumber: 2000
+  objectsNumber: 5000
   gameObject: {fileID: 1732752170155260, guid: d82a0024cf3346b4695544dd461fb02b, type: 3}
   parent: {fileID: 1844449555}
 --- !u!1 &2053837737 stripped
