@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static System.Math;
 
 public class SpawnTrees : MonoBehaviour
 {
@@ -12,8 +13,12 @@ public class SpawnTrees : MonoBehaviour
     {
         RaycastHit hit;
         float randomPositionX, randomPositionY, randomPositionZ;
-        int maxSpawnAttempts = 10;
         float checkRadius = 3f;
+        const float castleCenterX = -178f;
+        const float castleCenterZ = 262.5f;
+        const float castleCircleRadius = 30;
+        int maxSpawnAttempts = 10;
+        
         Vector3 randomPosition = Vector3.zero;
 
         int i = 0;
@@ -31,7 +36,8 @@ public class SpawnTrees : MonoBehaviour
                 randomPositionZ = Random.Range(-440.0f, 440.0f);
                 randomPositionY = 100.0f;
 
-                if (randomPositionX > -386 && randomPositionX < -142 && randomPositionZ > -13 && randomPositionZ < 337)
+                // Check if (X, Z) in Castle circle
+                if (Pow(randomPositionX - castleCenterX, 2) + Pow(randomPositionZ - castleCenterZ, 2) <= Pow(castleCircleRadius, 2))
                 {
                     validPosition = false;
                 } 
