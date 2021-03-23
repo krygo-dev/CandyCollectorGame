@@ -68,12 +68,15 @@
     <Compile Include="Assets\First person controller\Components\GroundCheck.cs" />
     <Compile Include="Assets\First person controller\Components\Jump.cs" />
     <Compile Include="Assets\First person controller\Components\Zoom.cs" />
+    <Compile Include="Assets\Scripts\Animations\CandyAnimation.cs" />
+    <Compile Include="Assets\Scripts\CollectCandy.cs" />
     <Compile Include="Assets\Scripts\FirstPersonLook.cs" />
     <Compile Include="Assets\Scripts\FirstPersonMovement.cs" />
     <Compile Include="Assets\Scripts\FlightController.cs" />
     <Compile Include="Assets\Scripts\StationMotion.cs" />
     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnBorderFlowers.cs" />
     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnBorderTrees.cs" />
+    <Compile Include="Assets\Scripts\_WorldBuilder\SpawnCandies.cs" />
     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnFlowers.cs" />
     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnObjects.cs" />
     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnObjectsFableMap.cs" />
