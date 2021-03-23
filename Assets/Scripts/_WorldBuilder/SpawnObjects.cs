@@ -61,7 +61,7 @@ public class SpawnObjects : MonoBehaviour
 
                             foreach (Collider col in colliders)
                             {
-                                if (col.tag == "Obstacle")
+                                if (col.tag == "Obstacle" || col.tag == "Candy")
                                 {
                                     validPosition = false;
                                 }
