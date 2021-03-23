@@ -72,8 +72,11 @@
     <Compile Include="Assets\Scripts\FirstPersonMovement.cs" />
     <Compile Include="Assets\Scripts\FlightController.cs" />
     <Compile Include="Assets\Scripts\StationMotion.cs" />
+    <Compile Include="Assets\Scripts\_WorldBuilder\SpawnBorderFlowers.cs" />
     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnBorderTrees.cs" />
+    <Compile Include="Assets\Scripts\_WorldBuilder\SpawnFlowers.cs" />
     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnObjects.cs" />
+    <Compile Include="Assets\Scripts\_WorldBuilder\SpawnObjectsFableMap.cs" />
     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnTrees.cs" />
     <Compile Include="Assets\Terrain2Obj.cs" />
     <None Include="Assets\RomanCityPack1Lite\README.txt" />
