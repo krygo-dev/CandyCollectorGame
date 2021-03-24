@@ -10,15 +10,15 @@ public class ShowText : MonoBehaviour
     public GameObject obj;
     public string textToShow = "Text";
 
-    void Start()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
-
 
     void Update()
     {
+        if (obj == null)
+        {
+            textField.GetComponent<Text>().text = "";
+        }
+
+
         if (textField != null && obj != null)
         {
             if (Vector3.Distance(obj.transform.position, this.transform.position) < 5)
