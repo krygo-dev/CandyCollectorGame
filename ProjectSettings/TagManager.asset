@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Candy
+  - VillageCenter
   layers:
   - Default
   - TransparentFX

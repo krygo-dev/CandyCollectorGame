@@ -5,7 +5,7 @@ using static System.Math;
 
 public class SpawnCandies : MonoBehaviour
 {
-    public int objectsNumber = 3000;
+    public static int objectsNumber = 500;
     public GameObject gameObject;
     public Transform parent;
 
@@ -77,7 +77,7 @@ public class SpawnCandies : MonoBehaviour
 
             if (validPosition)
             {
-                Instantiate(gameObject, randomPosition, Quaternion.Euler(new Vector3(45, 0, 0)), parent);
+                Instantiate(gameObject, randomPosition, Quaternion.Euler(new Vector3(45, Random.Range(0, 360), 0)), parent);
                 i++;
             }
         }

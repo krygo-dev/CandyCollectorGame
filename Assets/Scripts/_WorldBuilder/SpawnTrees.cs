@@ -61,7 +61,7 @@ public class SpawnTrees : MonoBehaviour
 
                             foreach (Collider col in colliders)
                             {
-                                if (col.tag == "Obstacle" || col.tag == "Candy")
+                                if (col.tag == "Obstacle" || col.tag == "Candy" ||)
                                 {
                                     validPosition = false;
                                 }
