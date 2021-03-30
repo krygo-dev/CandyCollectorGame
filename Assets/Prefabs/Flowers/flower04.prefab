@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 848166822211003249}
   - component: {fileID: 848166822220811409}
+  - component: {fileID: 8532551222728518485}
   m_Layer: 0
   m_Name: flower04
   m_TagString: Obstacle
@@ -55,6 +56,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &8532551222728518485
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848166822211436369}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.02514363
+  m_Center: {x: 0, y: 0.039999995, z: -0.001}
 --- !u!1 &848166822211436371
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,7 +456,7 @@ GameObject:
   - component: {fileID: 848166822211003259}
   - component: {fileID: 848166822210233177}
   - component: {fileID: 848166822209233305}
-  - component: {fileID: 8736144650768772093}
+  - component: {fileID: 5598882784388833911}
   m_Layer: 0
   m_Name: pPipe19
   m_TagString: Untagged
@@ -511,7 +525,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &8736144650768772093
+--- !u!64 &5598882784388833911
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
