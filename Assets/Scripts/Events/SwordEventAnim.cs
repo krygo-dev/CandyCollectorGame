@@ -6,6 +6,7 @@ public class SwordEventAnim : MonoBehaviour
 {
     public GameObject sword;
     public float height = 0.1f;
+    public int reward = 100;
     int clickCount = 0;
     Vector3 pos;
 
@@ -31,7 +32,9 @@ public class SwordEventAnim : MonoBehaviour
                 }
                 else if (clickCount > 30)
                 {
+                    // Barczyko jak będziesz robić animację miecza to na samym końcu musi być coś takiego żeby gracz dostał nagrodę
                     Destroy(sword);
+                    PlayerInfo.collectedCandy += reward;
                 }
                 else
                 {
