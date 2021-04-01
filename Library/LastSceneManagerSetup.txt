@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/The_land_of_three_fairy_tales.unity
+- path: Assets/Scenes/City.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
