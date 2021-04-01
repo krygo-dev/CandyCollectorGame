@@ -6,7 +6,9 @@ TagManager:
   tags:
   - Obstacle
   - Candy
-  - VillageCenter
+  - Crown
+  - Scepter
+  - Apple
   layers:
   - Default
   - TransparentFX

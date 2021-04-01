@@ -20,6 +20,15 @@ public class SpawnTrees : MonoBehaviour
         const float houseX = -100f;
         const float houseZ = 270f;
         const float houseRadius = 15;
+        const float vill1X = -305f;
+        const float vill1Z = -182f;
+        const float vill1Radius = 30;
+        const float vill2X = 276f;
+        const float vill2Z = -328f;
+        const float vill2Radius = 25;
+        const float vill3X = 372f;
+        const float vill3Z = 333f;
+        const float vill3Radius = 40;
         int maxSpawnAttempts = 10;
         
         Vector3 randomPosition = Vector3.zero;
@@ -41,7 +50,10 @@ public class SpawnTrees : MonoBehaviour
 
                 // Check if (X, Z) in Castle circle
                 if (Pow(randomPositionX - castleCenterX, 2) + Pow(randomPositionZ - castleCenterZ, 2) <= Pow(castleCircleRadius, 2) ||
-                    Pow(randomPositionX - houseX, 2) + Pow(randomPositionZ - houseZ, 2) <= Pow(houseRadius, 2))
+                    Pow(randomPositionX - houseX, 2) + Pow(randomPositionZ - houseZ, 2) <= Pow(houseRadius, 2) ||
+                    Pow(randomPositionX - vill1X, 2) + Pow(randomPositionZ - vill1Z, 2) <= Pow(vill1Radius, 2) ||
+                    Pow(randomPositionX - vill2X, 2) + Pow(randomPositionZ - vill2Z, 2) <= Pow(vill2Radius, 2) ||
+                    Pow(randomPositionX - vill3X, 2) + Pow(randomPositionZ - vill3Z, 2) <= Pow(vill3Radius, 2))
                 {
                     validPosition = false;
                 } 
