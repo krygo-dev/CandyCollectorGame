@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 113
+  controlID: 16
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 114
+  controlID: 21
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 115
+  controlID: 22
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -334,7 +334,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -394,9 +394,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: b8390000
       m_LastClickedID: 0
-      m_ExpandedIDs: 66bb71ff7ec271fff8d171ffe2da71ff14e271ffeef571ff68b7fdff3a5afeff6ed40000b6660100b4850100
+      m_ExpandedIDs: 7edcffffc0e3ffff68fbffff08660000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -456,9 +456,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.9320534, y: 27.518404, z: 393.1031}
+    m_Target: {x: 289.9127, y: 279.10278, z: -461.93726}
     speed: 2
-    m_Value: {x: 1.9320534, y: 27.518404, z: 393.1031}
+    m_Value: {x: 289.9127, y: 279.10278, z: -461.93726}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -504,13 +504,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.16642676, y: -0.04731235, z: 0.007993404, w: 0.9848954}
+    m_Target: {x: 0.2414797, y: -0.0087344535, z: 0.0021730443, w: 0.9703755}
     speed: 2
-    m_Value: {x: 0.16494766, y: -0.047323834, z: 0.007922349, w: 0.98513454}
+    m_Value: {x: 0.24147704, y: -0.008734358, z: 0.0021730205, w: 0.9703648}
   m_Size:
-    m_Target: 8.266331
+    m_Target: 1388.3965
     speed: 2
-    m_Value: 8.655844
+    m_Value: 1388.3965
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -528,7 +528,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.23794287, y: 0.35676318, z: -0.09448548, w: 0.89843154}
+  m_LastSceneViewRotation: {x: 0.16642676, y: -0.04731235, z: 0.007993404, w: 0.9848954}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -600,20 +600,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/ThreeFairyTalesMapObjects
+    - Assets/Prefabs/Flowers
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs/ThreeFairyTalesMapObjects
+  - Assets/Prefabs/Flowers
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jerck\Documents\Adam\candy-collector-3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 175}
-    m_SelectedIDs: 3cd30000
-    m_LastClickedID: 54076
-    m_ExpandedIDs: 00000000f8d10000fad10000fcd10000fed1000000d2000002d2000004d2000006d2000008d200000ad200000cd200000ed2000022d2000000ca9a3b
+    scrollPos: {x: 0, y: 55}
+    m_SelectedIDs: 40440000
+    m_LastClickedID: 17472
+    m_ExpandedIDs: 000000000a4400000c4400000e44000010440000124400001444000016440000184400001a4400001c4400001e440000204400002244000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -641,7 +641,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f8d10000fad10000fcd10000fed1000000d2000002d2000004d2000006d2000008d200000ad200000cd200000ed2000010d20000
+    m_ExpandedIDs: 000000000a4400000c4400000e44000010440000124400001444000016440000184400001a4400001c4400001e4400002044000022440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

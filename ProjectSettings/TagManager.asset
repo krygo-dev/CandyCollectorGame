@@ -9,6 +9,9 @@ TagManager:
   - Crown
   - Scepter
   - Apple
+  - BlueBean
+  - RedBean
+  - YellowBean
   layers:
   - Default
   - TransparentFX
