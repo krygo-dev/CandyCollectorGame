@@ -68,6 +68,9 @@
     <Compile Include="Assets\First person controller\Components\GroundCheck.cs" />
     <Compile Include="Assets\First person controller\Components\Jump.cs" />
     <Compile Include="Assets\First person controller\Components\Zoom.cs" />
+    <Compile Include="Assets\Prefabs\Town\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
+    <Compile Include="Assets\Prefabs\Town\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs" />
+    <Compile Include="Assets\Prefabs\Town\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
     <Compile Include="Assets\Scripts\Animations\CandyAnimation.cs" />
     <Compile Include="Assets\Scripts\CollectCandy.cs" />
     <Compile Include="Assets\Scripts\Events\CollectFairyObj.cs" />
@@ -89,14 +92,9 @@
     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnObjects.cs" />
     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnObjectsFableMap.cs" />
     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnTrees.cs" />
-    <Compile Include="Assets\SimplePoly - Town Pack\DemoScene\FlyCamera.cs" />
-    <Compile Include="Assets\SimplePoly - Town Pack\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
-    <Compile Include="Assets\SimplePoly - Town Pack\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs" />
-    <Compile Include="Assets\SimplePoly - Town Pack\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
     <Compile Include="Assets\Terrain2Obj.cs" />
-    <None Include="Assets\SimplePoly - Town Pack\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
-    <None Include="Assets\RomanCityPack1Lite\README.txt" />
-    <None Include="Assets\SimplePoly - Town Pack\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
+    <None Include="Assets\Prefabs\Town\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
+    <None Include="Assets\Prefabs\Town\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
     <Reference Include="UnityEngine">
       <HintPath>/Users/aleksanderbies/2019.4.20f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
