@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: def312a5d5f50ab44b0200bcd43d19ca
+  - enabled: 1
+    path: Assets/Scenes/Kingdom.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/The_land_of_three_fairy_tales.unity
+    guid: 7b80e78c6e2be4ad1988e13b062981b5
+  - enabled: 1
+    path: Assets/Scenes/City.unity
+    guid: be16c9db319804764bda0829aabfd1ad
   m_configObjects: {}
