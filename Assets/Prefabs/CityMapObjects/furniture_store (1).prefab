@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8048257318486988427}
   - component: {fileID: 8048257318485988427}
   - component: {fileID: 8048257318497319243}
+  - component: {fileID: 1192640885779345384}
   m_Layer: 0
   m_Name: furniture_store (1)
   m_TagString: Untagged
@@ -106,3 +107,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &1192640885779345384
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8048257318487919243}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: ce0dcc774ca12ff4780ed2c7c981e753, type: 3}

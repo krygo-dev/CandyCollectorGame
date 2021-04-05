@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 286420463652768168}
   - component: {fileID: 286420463653768040}
   - component: {fileID: 286420463659230824}
+  - component: {fileID: 4602963832883201119}
   m_Layer: 0
   m_Name: tobacco_shop
   m_TagString: Untagged
@@ -104,3 +105,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &4602963832883201119
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286420463651837352}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 18eabf3ca82ef3b43b69a08428f4efe5, type: 3}

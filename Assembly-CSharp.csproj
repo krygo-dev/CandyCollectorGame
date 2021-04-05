@@ -80,6 +80,7 @@
      <Compile Include="Assets\Scripts\_WorldBuilder\SpawnBorderFlowers.cs" />
      <Compile Include="Assets\Scripts\_WorldBuilder\SpawnBorderTrees.cs" />
      <Compile Include="Assets\Scripts\_WorldBuilder\SpawnCandies.cs" />
+     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnCandiesCity.cs" />
      <Compile Include="Assets\Scripts\_WorldBuilder\SpawnCandiesFableMap.cs" />
      <Compile Include="Assets\Scripts\_WorldBuilder\SpawnFlowers.cs" />
      <Compile Include="Assets\Scripts\_WorldBuilder\SpawnObjects.cs" />

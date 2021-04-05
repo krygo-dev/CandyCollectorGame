@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 881793764257417437}
   - component: {fileID: 881793764256287261}
   - component: {fileID: 881793764246775581}
+  - component: {fileID: -673546329820075072}
   m_Layer: 0
   m_Name: industrial_shop
   m_TagString: Untagged
@@ -104,3 +105,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &-673546329820075072
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881793764254029021}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 7f6b9c5531d9e6f45b73f32de6f9f808, type: 3}

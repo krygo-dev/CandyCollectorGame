@@ -10,13 +10,14 @@ public class SpawnObjectsCity : MonoBehaviour
 
     void Awake()
     {
+        RaycastHit hit;
         float randomPositionX, randomPositionY, randomPositionZ;
         float checkRadius = 3f;
         const float parkX = 485f;
         const float parkZ = 587f;
         const float parkWidth = 150f;
         const float parkHeight = 120f;
-        int maxSpawnAttempts = 5;
+        int maxSpawnAttempts = 10;
 
         Vector3 randomPosition = Vector3.zero;
 
@@ -33,7 +34,7 @@ public class SpawnObjectsCity : MonoBehaviour
 
                 randomPositionX = Random.Range(12f, 988f);
                 randomPositionZ = Random.Range(12f, 988f);
-                randomPositionY = -0.01f;
+                randomPositionY = 100f;
 
                 // Check if (X, Z) in CityPark
                 if (randomPositionX > parkX && randomPositionX < parkX + parkWidth && randomPositionZ > parkZ && randomPositionZ < parkZ + parkHeight)
@@ -43,12 +44,26 @@ public class SpawnObjectsCity : MonoBehaviour
                 else
                 {
                     randomPosition = new Vector3(randomPositionX, randomPositionY, randomPositionZ);
-                    validPosition = true;
-                    Collider[] colliders = Physics.OverlapSphere(randomPosition, checkRadius);
 
-                    foreach (Collider col in colliders)
+                    if (Physics.Raycast(randomPosition, Vector3.down, out hit, 200.0f))
                     {
-                        if (col.tag == "Obstacle" || col.tag == "Candy")
+                        randomPositionY = hit.point.y;
+
+                        if (randomPositionY >= -1 && randomPositionY <= 0.14f)
+                        {
+                            randomPosition = new Vector3(randomPositionX, randomPositionY, randomPositionZ);
+                            validPosition = true;
+                            Collider[] colliders = Physics.OverlapSphere(randomPosition, checkRadius);
+
+                            foreach (Collider col in colliders)
+                            {
+                                if (col.tag == "Obstacle" || col.tag == "Candy")
+                                {
+                                    validPosition = false;
+                                }
+                            }
+                        }
+                        else
                         {
                             validPosition = false;
                         }

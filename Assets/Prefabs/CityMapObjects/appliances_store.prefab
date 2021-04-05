@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 898395193367772247}
   - component: {fileID: 898395193366806167}
   - component: {fileID: 898395193361306519}
+  - component: {fileID: 8050178196528022536}
   m_Layer: 0
   m_Name: appliances_store
   m_TagString: Untagged
@@ -102,3 +103,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &8050178196528022536
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898395193368731735}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: e0828b8951ddb5742b21325602b044b8, type: 3}

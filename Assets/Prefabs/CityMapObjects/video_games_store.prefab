@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9017614719776931616}
   - component: {fileID: 9017614719777930720}
   - component: {fileID: 9017614719766335712}
+  - component: {fileID: -1473966936168534049}
   m_Layer: 0
   m_Name: video_games_store
   m_TagString: Untagged
@@ -104,3 +105,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &-1473966936168534049
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017614719775728416}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 3fb73df56d6b3ff4689f1de4916a818f, type: 3}

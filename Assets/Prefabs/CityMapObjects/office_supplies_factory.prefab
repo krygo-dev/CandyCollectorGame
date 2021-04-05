@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7168463949128178550}
   - component: {fileID: 7168463949127211446}
   - component: {fileID: 7168463949117535414}
+  - component: {fileID: -7636133491448254244}
   m_Layer: 0
   m_Name: office_supplies_factory
   m_TagString: Untagged
@@ -102,3 +103,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &-7636133491448254244
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7168463949124945782}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 14557251bec5f814899a3e7542c41988, type: 3}

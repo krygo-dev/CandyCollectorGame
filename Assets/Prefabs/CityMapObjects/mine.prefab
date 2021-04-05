@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2446061588427721663}
   - component: {fileID: 2446061588426721663}
   - component: {fileID: 2446061588417143935}
+  - component: {fileID: 759923206249837170}
   m_Layer: 0
   m_Name: mine
   m_TagString: Untagged
@@ -104,3 +105,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &759923206249837170
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2446061588424529855}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 2e6e9c0c0cb4b7f4bab48b071df012b0, type: 3}
