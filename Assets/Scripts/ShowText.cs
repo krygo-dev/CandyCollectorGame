@@ -5,11 +5,9 @@ using UnityEngine.UI;
 
 public class ShowText : MonoBehaviour
 {
-
-    public GameObject textField;
     public GameObject obj;
+    public GameObject textField;
     public string textToShow = "Text";
-
 
     void Update()
     {
@@ -24,7 +22,7 @@ public class ShowText : MonoBehaviour
             if (Vector3.Distance(obj.transform.position, this.transform.position) < 5)
             {
                 textField.GetComponent<Text>().text = textToShow;
-            } 
+            }
             else
             {
                 textField.GetComponent<Text>().text = "";

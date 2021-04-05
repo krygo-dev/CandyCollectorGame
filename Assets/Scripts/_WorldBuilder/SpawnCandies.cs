@@ -17,9 +17,6 @@ public class SpawnCandies : MonoBehaviour
         const float castleCenterX = -178f;
         const float castleCenterZ = 262.5f;
         const float castleCircleRadius = 25;
-        const float houseX = -100f;
-        const float houseZ = 270f;
-        const float houseRadius = 10;
         int maxSpawnAttempts = 10;
 
         Vector3 randomPosition = Vector3.zero;
@@ -40,8 +37,7 @@ public class SpawnCandies : MonoBehaviour
                 randomPositionY = 100.0f;
 
                 // Check if (X, Z) in Castle circle
-                if (Pow(randomPositionX - castleCenterX, 2) + Pow(randomPositionZ - castleCenterZ, 2) <= Pow(castleCircleRadius, 2) ||
-                    Pow(randomPositionX - houseX, 2) + Pow(randomPositionZ - houseZ, 2) <= Pow(houseRadius, 2))
+                if (Pow(randomPositionX - castleCenterX, 2) + Pow(randomPositionZ - castleCenterZ, 2) <= Pow(castleCircleRadius, 2))
                 {
                     validPosition = false;
                 }

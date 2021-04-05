@@ -10,11 +10,13 @@ public class PlayerInfo : MonoBehaviour
     public static bool eventObj2 = false;
     public static bool eventObj3 = false;
 
-    private GameObject textField;
     public Image eventObj1Img;
     public Image eventObj2Img;
     public Image eventObj3Img;
+
+    private GameObject textField;
     private int toCollect;
+    private bool objectsCollected = false;
 
     void Start()
     {
@@ -44,6 +46,13 @@ public class PlayerInfo : MonoBehaviour
         if (eventObj3 && eventObj3Img.enabled == false)
         {
             eventObj3Img.enabled = true;
+        }
+
+        if (!objectsCollected && eventObj1 && eventObj2 && eventObj3)
+        {
+            // Nagroda za zebranie wszsytkich trzech obiektów eventowych (do przemyślenia jeszcze)
+            collectedCandy += 200;
+            objectsCollected = true;
         }
     }
 }

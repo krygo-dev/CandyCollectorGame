@@ -11,11 +11,11 @@ public class SpawnBorderFlowers : MonoBehaviour
     {
         RaycastHit hit;
         float positionX, positionY, positionZ;
-        int maxSpawnY = 5;
+        int maxSpawnY = 12;
         Vector3 position;
 
         // First row
-        for (int i = -500; i < 500; i += 30)
+        for (int i = -500; i < 490; i += 15)
         {
             positionX = 495;
             positionZ = i;
@@ -24,7 +24,7 @@ public class SpawnBorderFlowers : MonoBehaviour
 
             if (Physics.Raycast(position, Vector3.down, out hit, 200.0f))
             {
-                positionY = hit.point.y;
+                positionY = hit.point.y - 5f;
 
                 if (positionY < maxSpawnY)
                 {
@@ -38,7 +38,7 @@ public class SpawnBorderFlowers : MonoBehaviour
             position = new Vector3(positionX, positionY, positionZ);
             if (Physics.Raycast(position, Vector3.down, out hit, 200.0f))
             {
-                positionY = hit.point.y;
+                positionY = hit.point.y - 5f;
 
                 if (positionY < maxSpawnY)
                 {
@@ -53,7 +53,7 @@ public class SpawnBorderFlowers : MonoBehaviour
             position = new Vector3(positionX, positionY, positionZ);
             if (Physics.Raycast(position, Vector3.down, out hit, 200.0f))
             {
-                positionY = hit.point.y;
+                positionY = hit.point.y - 5f;
 
                 if (positionY < maxSpawnY)
                 {
@@ -67,7 +67,7 @@ public class SpawnBorderFlowers : MonoBehaviour
             position = new Vector3(positionX, positionY, positionZ);
             if (Physics.Raycast(position, Vector3.down, out hit, 200.0f))
             {
-                positionY = hit.point.y;
+                positionY = hit.point.y - 5f;
 
                 if (positionY < maxSpawnY)
                 {
@@ -78,16 +78,16 @@ public class SpawnBorderFlowers : MonoBehaviour
         }
 
         // Second row
-        for (int i = -470; i < 470; i += 30)
+        for (int i = -475; i < 460; i += 15)
         {
-            positionX = 470;
+            positionX = 475;
             positionZ = i;
             positionY = 100.0f;
             position = new Vector3(positionX, positionY, positionZ);
 
             if (Physics.Raycast(position, Vector3.down, out hit, 200.0f))
             {
-                positionY = hit.point.y;
+                positionY = hit.point.y - 5f;
 
                 if (positionY < maxSpawnY)
                 {
@@ -96,13 +96,13 @@ public class SpawnBorderFlowers : MonoBehaviour
                 }
             }
 
-            positionX = -470;
+            positionX = -475;
             positionY = 100.0f;
             position = new Vector3(positionX, positionY, positionZ);
 
             if (Physics.Raycast(position, Vector3.down, out hit, 200.0f))
             {
-                positionY = hit.point.y;
+                positionY = hit.point.y - 5f;
 
                 if (positionY < maxSpawnY)
                 {
@@ -113,11 +113,11 @@ public class SpawnBorderFlowers : MonoBehaviour
 
             positionX = i;
             positionY = 100.0f;
-            positionZ = 470;
+            positionZ = 475;
             position = new Vector3(positionX, positionY, positionZ);
             if (Physics.Raycast(position, Vector3.down, out hit, 200.0f))
             {
-                positionY = hit.point.y;
+                positionY = hit.point.y - 5f;
 
                 if (positionY < maxSpawnY)
                 {
@@ -127,11 +127,11 @@ public class SpawnBorderFlowers : MonoBehaviour
             }
 
             positionY = 100.0f;
-            positionZ = -470;
+            positionZ = -475;
             position = new Vector3(positionX, positionY, positionZ);
             if (Physics.Raycast(position, Vector3.down, out hit, 200.0f))
             {
-                positionY = hit.point.y;
+                positionY = hit.point.y - 5f;
 
                 if (positionY < maxSpawnY)
                 {
@@ -140,70 +140,6 @@ public class SpawnBorderFlowers : MonoBehaviour
                 }
             }
         }
-
-        // Third row
-        /**for (int i = -460; i < 460; i += 20)
-        {
-            positionX = 465;
-            positionZ = i;
-            positionY = 100.0f;
-            position = new Vector3(positionX, positionY, positionZ);
-
-            if (Physics.Raycast(position, Vector3.down, out hit, 200.0f))
-            {
-                positionY = hit.point.y;
-
-                if (positionY < maxSpawnY)
-                {
-                    position = new Vector3(positionX, positionY, positionZ);
-                    Instantiate(flower, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
-                }
-            }
-
-            positionX = -465;
-            positionY = 100.0f;
-            position = new Vector3(positionX, positionY, positionZ);
-
-            if (Physics.Raycast(position, Vector3.down, out hit, 200.0f))
-            {
-                positionY = hit.point.y;
-
-                if (positionY < maxSpawnY)
-                {
-                    position = new Vector3(positionX, positionY, positionZ);
-                    Instantiate(flower, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
-                }
-            }
-
-            positionX = i;
-            positionY = 100.0f;
-            positionZ = 465;
-            position = new Vector3(positionX, positionY, positionZ);
-            if (Physics.Raycast(position, Vector3.down, out hit, 200.0f))
-            {
-                positionY = hit.point.y;
-
-                if (positionY < maxSpawnY)
-                {
-                    position = new Vector3(positionX, positionY, positionZ);
-                    Instantiate(flower, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
-                }
-            }
-
-            positionY = 100.0f;
-            positionZ = -465;
-            position = new Vector3(positionX, positionY, positionZ);
-            if (Physics.Raycast(position, Vector3.down, out hit, 200.0f))
-            {
-                positionY = hit.point.y;
-
-                if (positionY < maxSpawnY)
-                {
-                    position = new Vector3(positionX, positionY, positionZ);
-                    Instantiate(flower, position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)), parent);
-                }
-            }
-        }**/
     }
 }
 

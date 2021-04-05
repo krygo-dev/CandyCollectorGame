@@ -14,13 +14,13 @@ public class SpawnFlowers : MonoBehaviour
         RaycastHit hit;
         float randomPositionX, randomPositionY, randomPositionZ;
         float checkRadius = 3f;
-        const float sweetWayCenterX = -288f;
-        const float sweetWayCenterZ = -110f;
-        const float sweetWayElipseA = 110f;
-        const float sweetWayElipseB = 70f;
-        const float sweetWayCircleX = -390f;
-        const float sweetWayCircleZ = -70f;
-        const float sweetWayCircleRadius = 55f;
+        const float sweetWayCenterX = -270f;
+        const float sweetWayCenterZ = -114f;
+        const float sweetWayElipseA = 100f;
+        const float sweetWayElipseB = 50f;
+        const float sweetWayCircleX = -380f;
+        const float sweetWayCircleZ = -65f;
+        const float sweetWayCircleRadius = 45f;
         int maxSpawnAttempts = 10;
 
         Vector3 randomPosition = Vector3.zero;
@@ -36,8 +36,8 @@ public class SpawnFlowers : MonoBehaviour
             {
                 spawnAttempts++;
 
-                randomPositionX = Random.Range(-440.0f, 440.0f);
-                randomPositionZ = Random.Range(-440.0f, 440.0f);
+                randomPositionX = Random.Range(-460.0f, 460.0f);
+                randomPositionZ = Random.Range(-460.0f, 460.0f);
                 randomPositionY = 100.0f;
 
                 // Check if (X, Z) in Castle circle
@@ -62,7 +62,7 @@ public class SpawnFlowers : MonoBehaviour
 
                             foreach (Collider col in colliders)
                             {
-                                if (col.tag == "Obstacle")
+                                if (col.tag == "Obstacle" || col.tag == "Candy")
                                 {
                                     validPosition = false;
                                 }
