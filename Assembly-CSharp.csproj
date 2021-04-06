@@ -66,6 +66,7 @@
      <Compile Include="Assets\Prefabs\Town\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
      <Compile Include="Assets\Scripts\Animations\CandyAnimation.cs" />
      <Compile Include="Assets\Scripts\Animations\MoveCar.cs" />
+     <Compile Include="Assets\Scripts\Animations\MoveCar\Path.cs" />
      <Compile Include="Assets\Scripts\Animations\WheelAnimation.cs" />
      <Compile Include="Assets\Scripts\CollectCandy.cs" />
      <Compile Include="Assets\Scripts\Events\CollectFairyObj.cs" />
