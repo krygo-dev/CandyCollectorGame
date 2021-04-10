@@ -12,6 +12,9 @@ TagManager:
   - BlueBean
   - RedBean
   - YellowBean
+  - HotDog
+  - Pizza
+  - Fries
   layers:
   - Default
   - TransparentFX
