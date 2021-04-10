@@ -646,6 +646,10 @@
       <Project>{C1E897FC-1B25-743A-2014-D20B1BE7D2A4}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="ScriptsAssembly.csproj">
+      <Project>{A3436C1F-CB9F-2581-39B7-0D45DFB15327}</Project>
+      <Name>ScriptsAssembly</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
