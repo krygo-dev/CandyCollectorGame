@@ -5,6 +5,7 @@ using UnityEngine;
 public class JumpToHouse : MonoBehaviour
 {
     public GameObject spring;
+    public GameObject panel;
     private Rigidbody character;
     private Vector3 driftPos;
     private Vector3 endPos = new Vector3(303f, 27.5f, -221.12f);
@@ -15,11 +16,18 @@ public class JumpToHouse : MonoBehaviour
     void Start()
     {
         character = GetComponent<Rigidbody>();
+        panel.SetActive(false);
     }
 
     void FixedUpdate()
     {
+        panel.SetActive(false);
         float dist = FlatDistance(spring.transform.position, character.transform.position);
+
+        if (dist < 3f)
+        {
+            panel.SetActive(true);
+        }
 
         if (Input.GetButtonDown("Action") && dist < 2)
         {

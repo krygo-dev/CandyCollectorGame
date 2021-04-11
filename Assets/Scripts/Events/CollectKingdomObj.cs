@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollectKingdomObj : MonoBehaviour
 {
     public GameObject eventObj;
+    public GameObject panel;
 
     void Update()
     {
@@ -30,6 +31,7 @@ public class CollectKingdomObj : MonoBehaviour
                 }
 
                 Destroy(eventObj);
+                Destroy(panel);
             }
         }
     }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollectFairyObj : MonoBehaviour
 {
     public GameObject eventObj;
+    public GameObject panel;
 
     void Update()
     {
@@ -30,6 +31,7 @@ public class CollectFairyObj : MonoBehaviour
                 }
 
                 Destroy(eventObj);
+                Destroy(panel);
             }
         }
     }
