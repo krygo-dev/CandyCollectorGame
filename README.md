@@ -9,7 +9,7 @@ Simple 3D game for children aged 3-6. The main goal of the game is to collect 50
 * Blender 
 
 ## Usage
-W, S, A, D - moving around the map
+W, S, A, D - moving around the map, 
 moving the mouse L/R - look around
 
 ## Game description
