@@ -13,6 +13,7 @@ public class PlayerInfo : MonoBehaviour
     public Image eventObj1Img;
     public Image eventObj2Img;
     public Image eventObj3Img;
+    public GameObject panel;
 
     private GameObject textField;
     private int toCollect;
@@ -20,7 +21,12 @@ public class PlayerInfo : MonoBehaviour
 
     void Start()
     {
+        collectedCandy = 0;
+        eventObj1 = false;
+        eventObj2 = false;
+        eventObj3 = false;
         toCollect = SpawnCandies.objectsNumber;
+
         textField = GameObject.Find("Collected");
         textField.GetComponent<Text>().text = collectedCandy.ToString() + " / " + toCollect.ToString();
 
@@ -50,9 +56,17 @@ public class PlayerInfo : MonoBehaviour
 
         if (!objectsCollected && eventObj1 && eventObj2 && eventObj3)
         {
-            // Nagroda za zebranie wszsytkich trzech obiektów eventowych (do przemyślenia jeszcze)
+            // Nagroda za zebranie wszystkich trzech obiektów eventowych (do przemyślenia jeszcze)
             collectedCandy += 200;
             objectsCollected = true;
+        }
+
+        if (collectedCandy >= toCollect)
+        {
+            Debug.Log("Victory");
+            panel.SetActive(true);
+            Time.timeScale = 0f;
+            ShowMenu.gamePaused = true;
         }
     }
 }

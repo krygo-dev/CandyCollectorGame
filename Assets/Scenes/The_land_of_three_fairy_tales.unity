@@ -14165,6 +14165,7 @@ MonoBehaviour:
   eventObj1Img: {fileID: 1955793143}
   eventObj2Img: {fileID: 1987071516}
   eventObj3Img: {fileID: 1093767852}
+  panel: {fileID: 1840067928}
 --- !u!4 &1381846255 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4328744791737010, guid: 83528d106eccd4345940ac1ff56ffda7,
@@ -15517,12 +15518,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 98486579dfe475c4ca959a198a425228, type: 3}
-        m_MethodName: 
+      - m_Target: {fileID: 1784002874}
+        m_MethodName: BackToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

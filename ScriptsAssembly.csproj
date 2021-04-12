@@ -56,7 +56,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Animations\CandyAnimation.cs" />
-     <Compile Include="Assets\Scripts\BackToMenu.cs" />
      <Compile Include="Assets\Scripts\CollectCandy.cs" />
      <Compile Include="Assets\Scripts\Events\CollectCityObj.cs" />
      <Compile Include="Assets\Scripts\Events\CollectFairyObj.cs" />
@@ -70,7 +69,6 @@
      <Compile Include="Assets\Scripts\PlayerInfo.cs" />
      <Compile Include="Assets\Scripts\ShowMenu.cs" />
      <Compile Include="Assets\Scripts\ShowPanelWithText.cs" />
-     <Compile Include="Assets\Scripts\ShowText.cs" />
      <Compile Include="Assets\Scripts\StationMotion.cs" />
      <Compile Include="Assets\Scripts\_WorldBuilder\CityBorderTrees.cs" />
      <Compile Include="Assets\Scripts\_WorldBuilder\CityParkFlowers.cs" />
