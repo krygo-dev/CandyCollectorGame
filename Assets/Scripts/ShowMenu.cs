@@ -1,32 +1,55 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ShowMenu : MonoBehaviour
 {
     public GameObject panel;
 
-    private bool menuShown;
+    public static bool gamePaused = false;
     
     void Start()
     {
         panel.SetActive(false);
-        menuShown = false;
+        Resume();
     }
 
     void Update()
     {
-        if (Input.GetButton("Cancel") && !menuShown)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            menuShown = true;
-            //panel.SetActive(true);
-        } 
-        else if (Input.GetButton("Cancel") && menuShown)
-        {
-            menuShown = false;
-            //panel.SetActive(false);
+            if (gamePaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
         }
+    }
 
-        panel.SetActive(menuShown);
+    void Pause()
+    {
+        Debug.Log("Pause");
+        panel.SetActive(true);
+        Time.timeScale = 0f;
+        gamePaused = true;
+    }
+
+    public void Resume()
+    {
+        Debug.Log("Resume");
+        panel.SetActive(false);
+        Time.timeScale = 1f;
+        gamePaused = false;
+    }
+
+    public void BackToMainMenu()
+    {
+        Debug.Log("BackToMenu");
+        SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1f;
     }
 }
