@@ -7,12 +7,16 @@ public class KeyPressDoorController : MonoBehaviour
     [SerializeField] private Animator myDoor = null;
     [SerializeField] private bool doorClosed = true;
     public GameObject obj;
-    public int Distance = 5;
+    public int Distance = 3;
 
 
     void Update()
     {
-        if (Vector3.Distance(obj.transform.position, this.transform.position) < Distance)
+
+        float doorAndCameraDistance = Vector3.Distance(obj.transform.position, this.transform.position);
+        bool areDoorAndCameraAtSameHightLevel = isSameHightLevel(obj.transform.position, this.transform.position);
+        
+        if (doorAndCameraDistance < Distance && areDoorAndCameraAtSameHightLevel)
         {
             if(Input.GetKeyDown(KeyCode.E))
         {
@@ -32,6 +36,18 @@ public class KeyPressDoorController : MonoBehaviour
                 //gameObject.SetActive(false);
             }
         }
+        }
+    }
+
+    private bool isSameHightLevel(Vector3 pos1, Vector3 pos2)
+    {
+        if (pos1.y - pos2.y < -1.5f || pos1.y - pos2.y > 1.5f)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
         }
     }
 }

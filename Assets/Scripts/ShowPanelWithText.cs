@@ -28,8 +28,9 @@ public class ShowPanelWithText : MonoBehaviour
     {
         panel.SetActive(false);
         float distance = Vector3.Distance(player.transform.position, this.transform.position);
+        bool areObjectAndCameraAtSameHightLevel = isSameHightLevel(player.transform.position, this.transform.position);
 
-        if (this != null && distance < 3f)
+        if (this != null && distance < 3f && areObjectAndCameraAtSameHightLevel)
         {
             if (textWariant.ToString() == "Press")
             {
@@ -41,6 +42,18 @@ public class ShowPanelWithText : MonoBehaviour
                 panel.SetActive(true);
                 panelInfoText.GetComponent<Text>().text = "Hold E";
             }
+        }
+    }
+
+    private bool isSameHightLevel(Vector3 pos1, Vector3 pos2)
+    {
+        if (pos1.y - pos2.y < -1.5f || pos1.y - pos2.y > 1.5f)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
         }
     }
 }

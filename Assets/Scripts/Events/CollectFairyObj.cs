@@ -13,7 +13,7 @@ public class CollectFairyObj : MonoBehaviour
         {
             float dist = Vector3.Distance(eventObj.transform.position, this.transform.position);
 
-            if (Input.GetButtonDown("Action") && dist < 5)
+            if (Input.GetButtonDown("Action") && dist < 3)
             {
                 if (eventObj.tag == "RedBean")
                 {

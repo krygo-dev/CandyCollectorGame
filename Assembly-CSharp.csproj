@@ -56,6 +56,36 @@
      <Compile Include="Assets\Prefabs\Town\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
      <Compile Include="Assets\Prefabs\Town\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs" />
      <Compile Include="Assets\Prefabs\Town\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
+     <Compile Include="Assets\Scripts\Animations\CandyAnimation.cs" />
+     <Compile Include="Assets\Scripts\Animations\door\KeyPressDoorController.cs" />
+     <Compile Include="Assets\Scripts\Animations\sword\SwordEventAnim.cs" />
+     <Compile Include="Assets\Scripts\CollectCandy.cs" />
+     <Compile Include="Assets\Scripts\Events\CollectCityObj.cs" />
+     <Compile Include="Assets\Scripts\Events\CollectFairyObj.cs" />
+     <Compile Include="Assets\Scripts\Events\CollectKingdomObj.cs" />
+     <Compile Include="Assets\Scripts\FirstPersonLook.cs" />
+     <Compile Include="Assets\Scripts\FirstPersonMovement.cs" />
+     <Compile Include="Assets\Scripts\FlightController.cs" />
+     <Compile Include="Assets\Scripts\JumpToHouse.cs" />
+     <Compile Include="Assets\Scripts\LineClimbing.cs" />
+     <Compile Include="Assets\Scripts\PlayerInfo.cs" />
+     <Compile Include="Assets\Scripts\ShowMenu.cs" />
+     <Compile Include="Assets\Scripts\ShowPanelWithText.cs" />
+     <Compile Include="Assets\Scripts\SoundClick.cs" />
+     <Compile Include="Assets\Scripts\SoundHandling.cs" />
+     <Compile Include="Assets\Scripts\StationMotion.cs" />
+     <Compile Include="Assets\Scripts\_WorldBuilder\CityBorderTrees.cs" />
+     <Compile Include="Assets\Scripts\_WorldBuilder\CityParkFlowers.cs" />
+     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnBorderFlowers.cs" />
+     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnBorderTrees.cs" />
+     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnCandies.cs" />
+     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnCandiesCity.cs" />
+     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnCandiesFableMap.cs" />
+     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnFlowers.cs" />
+     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnObjects.cs" />
+     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnObjectsCity.cs" />
+     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnObjectsFableMap.cs" />
+     <Compile Include="Assets\Scripts\_WorldBuilder\SpawnTrees.cs" />
      <Compile Include="Assets\Terrain2Obj.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
@@ -678,10 +708,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="ScriptsAssembly.csproj">
-      <Project>{1f6c43a3-9fcb-8125-39b7-0d45dfb15327}</Project>
-      <Name>ScriptsAssembly</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
