@@ -12,8 +12,9 @@ public class CollectKingdomObj : MonoBehaviour
         if (eventObj != null)
         {
             float dist = Vector3.Distance(eventObj.transform.position, this.transform.position);
+            bool areEventObjectAndPlayerAtSameFloorLevel = isSameHightLevel(eventObj.transform.position, this.transform.position);
 
-            if (Input.GetButtonDown("Action") && dist < 3)
+            if (Input.GetButtonDown("Action") && dist < 3 && areEventObjectAndPlayerAtSameFloorLevel)
             {
                 if (eventObj.tag == "Crown")
                 {
@@ -33,6 +34,18 @@ public class CollectKingdomObj : MonoBehaviour
                 Destroy(eventObj);
                 Destroy(panel);
             }
+        }
+    }
+
+    private bool isSameHightLevel(Vector3 pos1, Vector3 pos2)
+    {
+        if (pos1.y - pos2.y < -1.5f || pos1.y - pos2.y > 1.5f)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
         }
     }
 }
