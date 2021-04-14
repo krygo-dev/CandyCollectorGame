@@ -16497,15 +16497,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328744791737010, guid: 83528d106eccd4345940ac1ff56ffda7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.56
+      value: -101
       objectReference: {fileID: 0}
     - target: {fileID: 4328744791737010, guid: 83528d106eccd4345940ac1ff56ffda7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.69
+      value: 12.18
       objectReference: {fileID: 0}
     - target: {fileID: 4328744791737010, guid: 83528d106eccd4345940ac1ff56ffda7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 360.91
+      value: -398
       objectReference: {fileID: 0}
     - target: {fileID: 4328744791737010, guid: 83528d106eccd4345940ac1ff56ffda7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23668,7 +23668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05c8fac87bbde9246a532e247a3c326d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textWariant: 0
+  textWariant: 1
   panel: {fileID: 1607005014}
   panelInfoText: {fileID: 1146691985}
 --- !u!64 &1952712252358600263
