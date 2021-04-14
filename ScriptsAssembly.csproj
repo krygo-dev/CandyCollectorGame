@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\PlayerInfo.cs" />
      <Compile Include="Assets\Scripts\ShowMenu.cs" />
      <Compile Include="Assets\Scripts\ShowPanelWithText.cs" />
+     <Compile Include="Assets\Scripts\SoundHandling.cs" />
      <Compile Include="Assets\Scripts\StationMotion.cs" />
      <Compile Include="Assets\Scripts\_WorldBuilder\CityBorderTrees.cs" />
      <Compile Include="Assets\Scripts\_WorldBuilder\CityParkFlowers.cs" />
@@ -65,6 +66,7 @@
      <Compile Include="Assets\Scripts\_WorldBuilder\SpawnObjectsCity.cs" />
      <Compile Include="Assets\Scripts\_WorldBuilder\SpawnObjectsFableMap.cs" />
      <Compile Include="Assets\Scripts\_WorldBuilder\SpawnTrees.cs" />
+     <Compile Include="Assets\Scripts\soundClick.cs" />
      <None Include="Assets\Scripts\ScriptsAssembly.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>D:/BACKUP/Studia/Unity/Environment/2019.4.20f1/2019.4.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

@@ -696,6 +696,7 @@ GameObject:
   - component: {fileID: 183618671}
   - component: {fileID: 183618670}
   - component: {fileID: 183618674}
+  - component: {fileID: 183618675}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -802,6 +803,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 2054760402}
+--- !u!114 &183618675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183618669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c97a62188281f54ab576ff8320696a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1459554894}
 --- !u!1 &203090896
 GameObject:
   m_ObjectHideFlags: 0
@@ -4726,6 +4740,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83528d106eccd4345940ac1ff56ffda7, type: 3}
+--- !u!20 &1459554894 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 20552819534951614, guid: 83528d106eccd4345940ac1ff56ffda7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1459554893}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1460794385 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8673355594669715540, guid: c38443d59fbc57e48965abeefa6d3f24,
