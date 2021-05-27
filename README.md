@@ -75,5 +75,5 @@ MIT
 
 ## Status of project: 
 ```diff 
-- PROCESS
++ COMPLETE
 ```
